@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+	<title>Frontend Mentor | Interactive pricing component</title>
+	<link rel="stylesheet" href="style.css" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" /> 
   
-  <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+	<img id="svg_half_circle" src="images/z-circle.svg">
+	<img id="svg_balls" src="images/z-balls.svg">
+	<img id="svg_waves" src="images/z-waves.svg">
+	<img id="svg_lines" src="images/z-lines.svg">
+	<div id="main">
+		<div id="heading">
+			<h2 class="dark_blue">Simple, traffic-based pricing</h2>
+			<p class="gray">
+				<span class="heading_span">Sign-up for our 30-day trial.</span> 
+				<span class="heading_span">No credit card required.</span>
+			</p>
+		</div>
+		
+		<div class="flex_container">
+			<div id="pageviews" class="gray"><span id="pageviews_value">100K </span>PAGEVIEWS</div>
+			<div id="price"><span id="price_value" class="dark_blue">$</span> <span class="gray" id="price_month">/month</span></div>
+			<div id="slider">
+				<div id="slider_background"></div>
+				<div id="slider_img"></div>
+				<input type="range" min="8" max="24" step="4" value="16">
+				
+			</div>
+			<div id="billing" class="gray">
+				<span id="monthly">Monthly Billing</span>
+				<div id="switch"><div id="circle"></div></div>
+				<span id="yearly">Yearly Billing</span>
+				<span id="discount">25% discount</span>
+			</div>
+		</div>
+		<div class="flex_container" id="flex_container_2">
+			<div id="benefits" class="gray">
+				<div class="benefit"><img src="images/icon-check.svg">Unlimited websites</div>
+				<div class="benefit"><img src="images/icon-check.svg">100% data ownership</div>
+				<div class="benefit"><img src="images/icon-check.svg">Email reports</div>
+			</div>
+			<div id="trial">
+				<span>Start my trial</span>
+			</div>
+		</div>
+	</div>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
 
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="https://github.com/Nedjeljko-Miloslavic/Frontend-mentor-second-task">Nedjeljko-Miloslavic</a>.
+	</div>
+	
+	<script src="app.js"></script>
 </body>
 </html>
